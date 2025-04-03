@@ -1,0 +1,11 @@
+# Ignore Python cache and virtual envs
+__pycache__/
+*.pyc
+.venv/
+
+# Ignore data artifacts
+data/input/*.json
+data/output/*.json
+
+# Ignore local logs
+*.log
