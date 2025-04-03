@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rag-cli-tool"
+version = "0.1.0"
+description = "Enterprise-grade RAG ingestion CLI using Milvus, SentenceTransformers, and CrossEncoder"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+typer = "^0.7.0"
+sentence-transformers = "^2.2.2"
+pymilvus = "^2.3.5"
+cross-encoder = "^0.1.0"
+tqdm = "^4.64.1"
+numpy = "^1.24.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rag-cli = "rag_cli_tool:app"
