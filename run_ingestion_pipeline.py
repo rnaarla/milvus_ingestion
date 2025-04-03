@@ -10,6 +10,12 @@ def run_command(description, command):
     print(f"✅ Completed: {description}")
 
 if __name__ == "__main__":
+    # Step 0: Install Required Python Packages
+    run_command(
+        "Installing required Python packages",
+        "pip install typer sentence-transformers pymilvus cross-encoder tqdm"
+    )
+
     # Step 1: Connect to Milvus
     run_command(
         "Connecting to Milvus",
@@ -35,3 +41,4 @@ if __name__ == "__main__":
     )
 
     print("\n🎉 Ingestion pipeline executed successfully.")
+    
